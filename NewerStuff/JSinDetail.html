@@ -1,0 +1,51 @@
+<html>
+    <!-- HTML page that includes Javascript code that implements a clickable counter -->
+    <head>
+        <title>Javascript Variables</title>
+    </head>
+
+    <body>
+        
+
+        
+
+        <script>
+            // Javascript code for a click-button counter
+
+            var x = 3;
+            var y = Math.floor(Math.random() * 11);
+            var s1 = "my hovercraft is full";
+            var s2 = " of eels";
+            
+
+            console.log("x is " + x);
+            console.log("y is " + y);
+            console.log (s1 + s2); // 'concatenates' the strings  -ties them together
+        
+            
+            if (y > x){
+                console.log("y is bigger!");
+            }
+            else{
+                console.log ("x is bigger");
+            }
+
+            var totalAttempts = 10;
+            var i = 1;
+            var max = 5;
+            
+            while (i++ < totalAttempts ){
+                var guess = Math.floor(Math.random() * 11);
+                if (guess > max){
+                    console.log("on attempt " + i + " " + guess + " is greater than " + max);
+                    break;
+                }
+            }
+            if (i > totalAttempts){
+                console.log("Never chose a number greater than " + x);
+            }
+            
+        </script>
+    
+    </body>
+    </html>

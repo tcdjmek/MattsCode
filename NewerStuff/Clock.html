@@ -1,0 +1,32 @@
+<html>
+    <body >
+        <!-- A Program showing use of timers in Javascript -->
+        <!-- Combines timers with random numbers -->
+        
+    <div id="txt"></div>
+    <p>Click "Try it". Some number of seconds passes, and you'll see an alert.</p>
+    
+    <button onclick="myFunction();">Try it</button>
+    
+    <script>
+    var elapsedTime = 0;
+    var t;
+    function myFunction(){
+        t = setInterval(startTime, 25);
+        setTimeout(myAlert, Math.floor(3001*Math.random()));
+    }
+    function myAlert() {
+        alert('Hello');
+        clearInterval(t);
+    }
+    
+    function startTime() {
+        elapsedTime +=25;
+        document.getElementById('txt').innerHTML =
+        Math.floor(elapsedTime / 1000) + ":" + Math.floor(elapsedTime % 1000);
+
+    }
+    
+    </script>
+    </body>
+    </html>
