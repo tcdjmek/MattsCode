@@ -1,0 +1,11 @@
+body {
+    font-family: Helvetica;
+}
+/* '#cookie' is the 'cookie' HTML element in the file 'index.html'. */
+#cookie {
+    width: 300px;
+    height: 200px;
+    background-image: url("turkey.jpg");
+    background-repeat: no-repeat;
+    cursor:crosshair;
+}

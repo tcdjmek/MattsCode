@@ -1,0 +1,17 @@
+h1 {
+    color: white;
+    text-align: center;
+}
+
+p {
+    font-family: verdana;
+    font-size: 20px;
+    color: #FF0000;
+
+}
+h2 { font-family:Arial;
+    font-size:30px;
+}
+body { background-image: url('smaug.png');
+        background-repeat: initial ;
+    }
