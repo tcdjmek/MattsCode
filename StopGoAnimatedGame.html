@@ -2,16 +2,17 @@
 <html>
 <style>
 #myContainer {
-  width: 400px;
-  height: 400px;
+  width: 100%;
+  height: 100%;
   position: relative;
-  background: yellow;
+ 
 }
 #myAnimation {
-  width: 50px;
-  height: 50px;
+  width: 300px;
+  height: 200px;
   position: absolute;
-  background-color: red;
+  background-image: url("turkey.jpg");
+  background-repeat: no-repeat;
 }
 </style>
 <body>
@@ -28,12 +29,14 @@
 <script>
 let score=0;
 let started = false;
+
 function ScoreUpdate(){
 	score += 1;
     document.getElementById("myScore").innerHTML = score;
 }
 
 function myStopGo(){
+
 
     if (started == false){
         //change the button string, start moving if not, otherwise stop
